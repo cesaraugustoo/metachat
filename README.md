@@ -18,7 +18,7 @@ Near real-time, multi-objective, multi-wavelength autonomous metasurface design 
 
 - `metachat-aim/`: Source code for the AIM agentic design stack.
 - `film-waveynet/`: Source code for the FiLM WaveY-Net surrogate solver, including scripts for training and inference (pretrained weights downloadable via [Zenodo](https://zenodo.org/records/15802727), training and validation data downloadable via [Stanford Digital Repository](https://purl.stanford.edu/dq123fg9049); see below).
-
+- `web-app/`: Code for an example web app, which includes a frontend and a GPU server backend, to run MetaChat.
 ## Data availability
 
 All data used for training and validation in the study and referenced by the code here (dielectric structures, sources, Ex, Ey, and Hz fields) can be downloaded from the [Stanford Digital Repository](https://purl.stanford.edu/dq123fg9049). Further information can be found on the [Metanet Page](http://metanet.stanford.edu/search/metachat/). The pretrained `best_model.pt` checkpoint is hosted on [Zenodo](https://zenodo.org/records/15802727).
