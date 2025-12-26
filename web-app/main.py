@@ -23,8 +23,8 @@ DESIGN_BASE_PATH = os.getenv("DESIGN_BASE_PATH", "/media/tmp2/metachat-app/backe
 MATERIAL_DB_PATH = os.getenv("MATERIAL_DB_PATH", "/media/tmp2/metachat-app/backend/tools/material_db/materials.db")
 
 # Import your agent components
-from backend.agent.base import Agent
-from backend.core.models.openai import OpenAIModel
+from metachat_core.agent.base import Agent
+from metachat_core.core.models.openai import OpenAIModel
 from backend.tools.design.api import NeuralDesignAPI
 from backend.tools.solvers.scientific_compute import ScientificCompute
 from backend.tools.solvers.symbolic_solver import SymbolicSolver

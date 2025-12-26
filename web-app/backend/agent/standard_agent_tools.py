@@ -1,5 +1,5 @@
-from typing import Dict, Any, List, Optional, AsyncGenerator
-from .base import Agent
+from typing import Dict, Any, List, Optional
+from metachat_core.agent import Agent
 from ..tools.solvers.scientific_compute import ScientificCompute
 from ..tools.solvers.symbolic_solver import SymbolicSolver
 from ..tools.design.api import NeuralDesignAPI
