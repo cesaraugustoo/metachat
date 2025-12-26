@@ -6,7 +6,7 @@
 - [x] Task: Analyze the Web App (FastAPI + Frontend) in `web-app/` 7655212
 - [ ] Task: Conductor - User Manual Verification 'Core System Analysis' (Protocol in workflow.md)
 
-## Phase 2: Integration and Synthesis
+## Phase 2: Integration and Synthesis [checkpoint: b09dd3d]
 - [x] Task: Document inter-component communication and data flow 3a6c49e
 - [x] Task: Generate a comprehensive Architectural Map (markdown/diagram) 4349b56
 - [x] Task: Identify and list technical debt and refactoring opportunities b40153b
