@@ -1,6 +1,6 @@
 # Track Plan: Centralized Configuration Management
 
-## Phase 1: Core Configuration Implementation
+## Phase 1: Core Configuration Implementation [checkpoint: 7ff8c9e]
 - [x] Task: Configure `metachat_core` dependencies c4f798e
     - [ ] Sub-task: Add `pydantic-settings` to `metachat_core/pyproject.toml`
 - [x] Task: Implement Settings Models in `metachat_core/config/` a82a80b
