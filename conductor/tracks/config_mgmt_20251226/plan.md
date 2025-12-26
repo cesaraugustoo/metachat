@@ -18,8 +18,8 @@
     - [ ] Sub-task: Replace legacy environment variable reads and hardcoded paths in `metachat-aim/` with `metachat_core.config`
 - [ ] Task: Conductor - User Manual Verification 'AIM Integration' (Protocol in workflow.md)
 
-## Phase 3: Web-App Integration
-- [ ] Task: Migrate `web-app` to Centralized Config
+## Phase 3: Web-App Integration [checkpoint: ba47908]
+- [x] Task: Migrate `web-app` to Centralized Config 97e1e01
     - [ ] Sub-task: Write integration tests for Web-App config loading
     - [ ] Sub-task: Update `web-app/main.py` and backend tools to use `metachat_core.config`
     - [ ] Sub-task: Replace hardcoded paths in `NeuralDesignAPI` and `MaterialDatabaseCLI`
