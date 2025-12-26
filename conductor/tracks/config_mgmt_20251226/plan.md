@@ -7,7 +7,7 @@
     - [ ] Sub-task: Write tests for Settings validation
     - [ ] Sub-task: Define `PathSettings`, `APISettings`, and `SolverSettings`
     - [ ] Sub-task: Implement `BaseSettings` and environment-specific subclasses (`DevSettings`, `ProdSettings`, `DockerSettings`)
-- [ ] Task: Implement Settings Factory
+- [x] Task: Implement Settings Factory ded1198
     - [ ] Sub-task: Write tests for environment selection logic
     - [ ] Sub-task: Create a factory function to instantiate the correct settings based on `APP_ENV`
 - [ ] Task: Conductor - User Manual Verification 'Core Configuration Implementation' (Protocol in workflow.md)
