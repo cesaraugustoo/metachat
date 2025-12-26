@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "metachat-core"
+version = "0.1.0"
+description = "Core library for MetaChat agentic framework"
+authors = ["Robert Lupoiu"]
+readme = "README.md"
+packages = [{include = "metachat_core"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
