@@ -4,5 +4,4 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
-## [ ] Track: Analyze and Document
-*Link: [./conductor/tracks/analyze_document_20251226/](./conductor/tracks/analyze_document_20251226/)*
+
