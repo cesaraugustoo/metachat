@@ -1,6 +1,6 @@
 from typing import Dict, Any, List, Optional
 from metachat_core.agent import Agent
-from tools.design.api import NeuralDesignAPI
+from metachat_core.core.tools.design import NeuralDesignAPI
 from pathlib import Path
 import json
 from datetime import datetime

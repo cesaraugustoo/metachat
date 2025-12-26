@@ -1,7 +1,7 @@
 from typing import Dict, Any, List, Optional
 from metachat_core.agent import Agent
 from pathlib import Path
-from tools.design.api import NeuralDesignAPI
+from metachat_core.core.tools.design import NeuralDesignAPI
 from datetime import datetime
 
 class StandardAgent(Agent):

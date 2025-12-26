@@ -2,7 +2,7 @@ from typing import Dict, Any, List, Optional, AsyncGenerator
 from metachat_core.agent import Agent
 from ..tools.solvers.scientific_compute import ScientificCompute
 from ..tools.solvers.symbolic_solver import SymbolicSolver
-from ..tools.design.api import NeuralDesignAPI
+from metachat_core.core.tools.design import NeuralDesignAPI
 from ..tools.material_db.query_materials import MaterialDatabaseCLI
 from pathlib import Path
 import json
