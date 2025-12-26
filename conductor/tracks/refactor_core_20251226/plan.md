@@ -1,0 +1,18 @@
+# Track Plan: Refactor Core Architecture
+
+## Phase 1: Package Scaffolding
+- [ ] Task: Create `metachat_core` directory structure and `pyproject.toml`
+- [ ] Task: Configure shared dependencies in the new package
+- [ ] Task: Conductor - User Manual Verification 'Package Scaffolding' (Protocol in workflow.md)
+
+## Phase 2: Component Migration
+- [ ] Task: Migrate Core Models (`core/models/`) to `metachat_core`
+- [ ] Task: Migrate Base Agent and Tool interfaces to `metachat_core`
+- [ ] Task: Migrate `NeuralDesignAPI` shared logic to `metachat_core`
+- [ ] Task: Conductor - User Manual Verification 'Component Migration' (Protocol in workflow.md)
+
+## Phase 3: Consumer Integration & Cleanup
+- [ ] Task: Refactor `metachat-aim` to use `metachat_core`
+- [ ] Task: Refactor `web-app` to use `metachat_core`
+- [ ] Task: Remove duplicated code from legacy directories
+- [ ] Task: Conductor - User Manual Verification 'Integration and Cleanup' (Protocol in workflow.md)
