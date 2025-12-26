@@ -1,7 +1,7 @@
 # Track Plan: Refactor Core Architecture
 
 ## Phase 1: Package Scaffolding
-- [ ] Task: Create `metachat_core` directory structure and `pyproject.toml`
+- [x] Task: Create `metachat_core` directory structure and `pyproject.toml` 3d1a964
 - [ ] Task: Configure shared dependencies in the new package
 - [ ] Task: Conductor - User Manual Verification 'Package Scaffolding' (Protocol in workflow.md)
 
