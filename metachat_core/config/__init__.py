@@ -7,6 +7,7 @@ from .settings import (
     APISettings, 
     SolverSettings
 )
+from .factory import get_settings
 
 __all__ = [
     "BaseSettings", 
@@ -15,5 +16,6 @@ __all__ = [
     "DockerSettings",
     "PathSettings", 
     "APISettings", 
-    "SolverSettings"
+    "SolverSettings",
+    "get_settings"
 ]
