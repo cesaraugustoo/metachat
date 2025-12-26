@@ -11,7 +11,7 @@
 - [x] Task: Migrate `NeuralDesignAPI` shared logic to `metachat_core` 2a0c78f
 - [ ] Task: Conductor - User Manual Verification 'Component Migration' (Protocol in workflow.md)
 
-## Phase 3: Consumer Integration & Cleanup
+## Phase 3: Consumer Integration & Cleanup [checkpoint: f54f22f]
 - [x] Task: Refactor `metachat-aim` to use `metachat_core` e8be5ce
 - [x] Task: Refactor `web-app` to use `metachat_core` 8a564e2
 - [x] Task: Remove duplicated code from legacy directories 9f8fa7e
