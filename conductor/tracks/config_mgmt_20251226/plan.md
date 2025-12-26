@@ -3,7 +3,7 @@
 ## Phase 1: Core Configuration Implementation
 - [x] Task: Configure `metachat_core` dependencies c4f798e
     - [ ] Sub-task: Add `pydantic-settings` to `metachat_core/pyproject.toml`
-- [ ] Task: Implement Settings Models in `metachat_core/config/`
+- [x] Task: Implement Settings Models in `metachat_core/config/` a82a80b
     - [ ] Sub-task: Write tests for Settings validation
     - [ ] Sub-task: Define `PathSettings`, `APISettings`, and `SolverSettings`
     - [ ] Sub-task: Implement `BaseSettings` and environment-specific subclasses (`DevSettings`, `ProdSettings`, `DockerSettings`)
