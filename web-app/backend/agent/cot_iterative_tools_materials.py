@@ -4,11 +4,15 @@ from ..tools.solvers.scientific_compute import ScientificCompute
 from ..tools.solvers.symbolic_solver import SymbolicSolver
 from metachat_core.core.tools.design import NeuralDesignAPI
 from ..tools.material_db.query_materials import MaterialDatabaseCLI
+from metachat_core.config import get_settings
 from pathlib import Path
 import json
 from datetime import datetime
 import uuid
 import os
+
+# Get centralized settings
+settings = get_settings()
 
 class IterativeAgentToolsMaterials(Agent):
     """Simple one-shot agent that solves problems in a single model call."""
@@ -20,26 +24,17 @@ class IterativeAgentToolsMaterials(Agent):
         # Add symbolic solving tool
         self.tools['symbolic_solve'] = SymbolicSolver()
         # Add neural design tools
-        # Read GPU IDs from environment variable (comma-separated, e.g., "1,2,3,4,5,6,7")
-        gpu_ids_env = os.getenv("GPU_IDS")
-        gpu_ids = None
-        if gpu_ids_env:
-            try:
-                gpu_ids = [int(x.strip()) for x in gpu_ids_env.split(",")]
-            except ValueError:
-                raise ValueError(f"Invalid GPU_IDS format: {gpu_ids_env}. Expected comma-separated integers (e.g., '0,1,2,3')")
-        self.tools['neural_design'] = NeuralDesignAPI(gpu_ids=gpu_ids)
-        material_db_path = os.getenv("MATERIAL_DB_PATH", "/media/tmp2/metachat-app/backend/tools/material_db/materials.db")
+        self.tools['neural_design'] = NeuralDesignAPI(gpu_ids=settings.solver.gpu_ids)
         # Initialize the materials CLI with the same model
         self.materials_cli = MaterialDatabaseCLI(
-            db_path=material_db_path,
+            db_path=settings.paths.materials_db_path,
             model=self.model,  # Pass the model instance directly
             debug=False,
-            log_dir="logs/materials_chat"
+            log_dir=os.path.join(settings.paths.log_dir, "materials_chat")
         )
 
         # Add logging configuration
-        self.log_dir = Path(kwargs.get('log_dir', "logs/self_chat")) / self.model.model_name
+        self.log_dir = Path(kwargs.get('log_dir', os.path.join(settings.paths.log_dir, "self_chat"))) / self.model.model_name
         self.log_dir.mkdir(parents=True, exist_ok=True)
         self.debug = kwargs.get('debug', False)
 

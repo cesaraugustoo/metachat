@@ -14,13 +14,10 @@ import uuid  # Add this import for UUID generation
 from datetime import datetime
 from fastapi.responses import FileResponse
 import subprocess  # Add this import for the ping endpoint
+from metachat_core.config import get_settings
 
 # Load environment variables
-dotenv.load_dotenv()
-
-DEFAULT_MODEL_NAME = os.getenv("OPENAI_MODEL_NAME", "gpt-5.2-2025-12-11")
-DESIGN_BASE_PATH = os.getenv("DESIGN_BASE_PATH", "/media/tmp2/metachat-app/backend/tools/design")
-MATERIAL_DB_PATH = os.getenv("MATERIAL_DB_PATH", "/media/tmp2/metachat-app/backend/tools/material_db/materials.db")
+settings = get_settings()
 
 # Import your agent components
 from metachat_core.agent.base import Agent
@@ -60,13 +57,13 @@ app.add_middleware(
 
 # Initialize OpenAI model
 model = OpenAIModel(
-    model_name=DEFAULT_MODEL_NAME,
-    api_key=os.getenv("OPENAI_API_KEY")
+    model_name=settings.api.openai_model_name,
+    api_key=settings.api.openai_api_key
 )
 
 # Initialize MaterialDatabaseCLI
 materials_cli = MaterialDatabaseCLI(
-    db_path=MATERIAL_DB_PATH,
+    db_path=settings.paths.materials_db_path,
     model=model,
     debug=True
 )
@@ -84,7 +81,7 @@ class ChatRequest(BaseModel):
 
 # Add this function to count tokens
 def count_tokens(text: str, model: Optional[str] = None) -> int:
-    model_to_use = model or DEFAULT_MODEL_NAME
+    model_to_use = model or settings.api.openai_model_name
     encoding_model = "gpt-5" if model_to_use.startswith("gpt-5") else model_to_use
     encoding = tiktoken.encoding_for_model(encoding_model)
     return len(encoding.encode(text))
@@ -286,7 +283,7 @@ async def ping(name: str = "Anonymous"):
 @app.get("/download/{path:path}")
 async def download_file(path: str):
     # Base path where design files are stored
-    base_path = DESIGN_BASE_PATH
+    base_path = settings.paths.results_dir
     file_path = os.path.join(base_path, path)
     
     # Check if file exists
