@@ -12,8 +12,8 @@
     - [ ] Sub-task: Create a factory function to instantiate the correct settings based on `APP_ENV`
 - [ ] Task: Conductor - User Manual Verification 'Core Configuration Implementation' (Protocol in workflow.md)
 
-## Phase 2: AIM Integration
-- [ ] Task: Migrate `metachat-aim` to Centralized Config
+## Phase 2: AIM Integration [checkpoint: ddfe94e]
+- [x] Task: Migrate `metachat-aim` to Centralized Config e5b9928
     - [ ] Sub-task: Write integration tests for AIM config loading
     - [ ] Sub-task: Replace legacy environment variable reads and hardcoded paths in `metachat-aim/` with `metachat_core.config`
 - [ ] Task: Conductor - User Manual Verification 'AIM Integration' (Protocol in workflow.md)
