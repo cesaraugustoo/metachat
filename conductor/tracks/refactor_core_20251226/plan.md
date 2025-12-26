@@ -13,6 +13,6 @@
 
 ## Phase 3: Consumer Integration & Cleanup
 - [x] Task: Refactor `metachat-aim` to use `metachat_core` e8be5ce
-- [ ] Task: Refactor `web-app` to use `metachat_core`
+- [x] Task: Refactor `web-app` to use `metachat_core` 8a564e2
 - [ ] Task: Remove duplicated code from legacy directories
 - [ ] Task: Conductor - User Manual Verification 'Integration and Cleanup' (Protocol in workflow.md)
