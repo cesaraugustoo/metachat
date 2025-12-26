@@ -25,7 +25,7 @@
     - [ ] Sub-task: Replace hardcoded paths in `NeuralDesignAPI` and `MaterialDatabaseCLI`
 - [ ] Task: Conductor - User Manual Verification 'Web-App Integration' (Protocol in workflow.md)
 
-## Phase 4: Finalization and Documentation
+## Phase 4: Finalization and Documentation [checkpoint: ae235b3]
 - [x] Task: Unified Environment Setup 07283b6
     - [ ] Sub-task: Create template `.env` files for different environments
     - [ ] Sub-task: Document the configuration system and how to switch environments in `README.md` or a new `docs/config.md`
