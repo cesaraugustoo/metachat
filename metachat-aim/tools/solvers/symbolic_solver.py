@@ -1,6 +1,6 @@
 from typing import Dict, Any
 import sympy as sp
-from core.tools.base import BaseTool
+from metachat_core.core.tools.base import BaseTool
 from io import StringIO
 import sys
 

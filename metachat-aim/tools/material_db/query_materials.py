@@ -12,9 +12,9 @@ project_root = current_dir.parent.parent
 sys.path.append(str(project_root))
 
 from tools.material_db.query import MaterialQueryInterface
-from core.models.openai import OpenAIModel
-from core.models.anthropic import AnthropicModel
-from core.models.base import BaseModel
+from metachat_core.core.models.openai import OpenAIModel
+from metachat_core.core.models.anthropic import AnthropicModel
+from metachat_core.core.models.base import BaseModel
 
 # Load environment variables
 dotenv.load_dotenv()

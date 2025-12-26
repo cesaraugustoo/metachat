@@ -1,7 +1,7 @@
 from typing import Dict, Any
 import numpy as np
 from scipy import constants, optimize, integrate
-from core.tools.base import BaseTool, ToolCall
+from metachat_core.core.tools.base import BaseTool, ToolCall
 from io import StringIO
 import sys
 

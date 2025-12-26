@@ -18,9 +18,9 @@ from agent.cot_iterative import IterativeAgent
 from agent.standard_agent_tools import StandardAgentToolsMaterials
 
 from agent.standard_agent import StandardAgent
-from core.models.openai import OpenAIModel
-from core.models.anthropic import AnthropicModel
-from core.models.llama import LlamaModel
+from metachat_core.core.models.openai import OpenAIModel
+from metachat_core.core.models.anthropic import AnthropicModel
+from metachat_core.core.models.llama import LlamaModel
 from experiments.eval_framework.grader import AnswerGrader
 
 async def run_evaluation(

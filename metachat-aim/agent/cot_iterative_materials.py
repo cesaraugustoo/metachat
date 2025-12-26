@@ -1,5 +1,5 @@
 from typing import Dict, Any, List, Optional
-from .base import Agent
+from metachat_core.agent import Agent
 from tools.design.api import NeuralDesignAPI
 from tools.material_db.query_materials import MaterialDatabaseCLI
 from pathlib import Path

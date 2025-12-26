@@ -1,5 +1,5 @@
 from typing import Dict, Any, Optional, List
-from core.models.base import BaseModel
+from metachat_core.core.models.base import BaseModel
 import json
 import re
 
