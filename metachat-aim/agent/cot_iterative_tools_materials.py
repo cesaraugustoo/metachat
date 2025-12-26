@@ -4,10 +4,11 @@ from tools.solvers.scientific_compute import ScientificCompute
 from tools.solvers.symbolic_solver import SymbolicSolver
 from metachat_core.core.tools.design import NeuralDesignAPI
 from tools.material_db.query_materials import MaterialDatabaseCLI
+from metachat_core.config import get_settings
 from pathlib import Path
-import json
-from datetime import datetime
-import uuid
+
+# Get centralized settings
+settings = get_settings()
 
 class IterativeAgentToolsMaterials(Agent):
     """Simple one-shot agent that solves problems in a single model call."""
@@ -22,7 +23,7 @@ class IterativeAgentToolsMaterials(Agent):
         self.tools['neural_design'] = NeuralDesignAPI()
         # Initialize the materials CLI with the same model
         self.materials_cli = MaterialDatabaseCLI(
-            db_path="tools/material_db/materials.db",
+            db_path=settings.paths.materials_db_path,
             model=self.model,  # Pass the model instance directly
             debug=False,
             log_dir="experiments/logs/eval_v1_corrected_singlestepfunc/cot_iterative_tools_materials/materials_chat"

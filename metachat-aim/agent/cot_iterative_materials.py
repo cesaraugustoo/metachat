@@ -2,10 +2,11 @@ from typing import Dict, Any, List, Optional
 from metachat_core.agent import Agent
 from metachat_core.core.tools.design import NeuralDesignAPI
 from tools.material_db.query_materials import MaterialDatabaseCLI
+from metachat_core.config import get_settings
 from pathlib import Path
-import json
-from datetime import datetime
-import uuid
+
+# Get centralized settings
+settings = get_settings()
 
 class IterativeAgentMaterials(Agent):
     """Simple one-shot agent that solves problems in a single model call."""
@@ -16,7 +17,7 @@ class IterativeAgentMaterials(Agent):
         self.tools['neural_design'] = NeuralDesignAPI()
         # Initialize the materials CLI with the same model
         self.materials_cli = MaterialDatabaseCLI(
-            db_path="tools/material_db/materials.db",
+            db_path=settings.paths.materials_db_path,
             model=self.model,  # Pass the model instance directly
             debug=False,
             log_dir="experiments/logs/eval_v1_corrected_matsearchcorrect_3/cot_iterative_materials/materials_chat"

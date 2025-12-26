@@ -8,8 +8,10 @@ import dotenv
 from tqdm import tqdm
 import aiofiles
 from asyncio import Lock
+from metachat_core.config import get_settings
 
-dotenv.load_dotenv()
+# Get centralized settings
+settings = get_settings()
 
 from agent.cot_iterative_tools_materials import IterativeAgentToolsMaterials
 from agent.cot_iterative_materials import IterativeAgentMaterials
@@ -42,7 +44,7 @@ async def run_evaluation(
     # Create dedicated grader with gpt-4o
     grader_model = OpenAIModel(
         model_name="gpt-4o", 
-        api_key=os.getenv("OPENAI_API_KEY")
+        api_key=settings.api.openai_api_key
     )
     grader = AnswerGrader(grader_model)
     
@@ -229,23 +231,23 @@ async def main():
     models = {
         "gpt-4o": OpenAIModel(
             model_name="gpt-4o", 
-            api_key=os.getenv("OPENAI_API_KEY")
+            api_key=settings.api.openai_api_key
         ),
         "gpt-4o-mini": OpenAIModel(
             model_name="gpt-4o-mini",
-            api_key=os.getenv("OPENAI_API_KEY")
+            api_key=settings.api.openai_api_key
         ),
         "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo": LlamaModel(
             model_name="meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
-            api_key=os.getenv("TOGETHER_API_KEY")
+            api_key=settings.api.together_api_key
         ),
         "meta-llama/Llama-3.3-70B-Instruct-Turbo": LlamaModel(
             model_name="meta-llama/Llama-3.3-70B-Instruct-Turbo",
-            api_key=os.getenv("TOGETHER_API_KEY")
+            api_key=settings.api.together_api_key
         ),
         "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo": LlamaModel(
             model_name="meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo",
-            api_key=os.getenv("TOGETHER_API_KEY")
+            api_key=settings.api.together_api_key
         ),
     }
     

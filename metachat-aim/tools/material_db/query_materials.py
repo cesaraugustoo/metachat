@@ -15,6 +15,9 @@ from tools.material_db.query import MaterialQueryInterface
 from metachat_core.core.models.openai import OpenAIModel
 from metachat_core.core.models.anthropic import AnthropicModel
 from metachat_core.core.models.base import BaseModel
+from metachat_core.config import get_settings
+
+settings = get_settings()
 
 # Load environment variables
 dotenv.load_dotenv()
@@ -103,7 +106,7 @@ async def main():
     parser = argparse.ArgumentParser(description='Query the materials database')
     parser.add_argument('--db-path', 
                        type=str,
-                       default="tools/material_db/materials.db",
+                       default=settings.paths.materials_db_path,
                        help='Path to the SQLite database file')
     parser.add_argument('--model',
                        type=str,
@@ -127,7 +130,7 @@ async def main():
             db_path=args.db_path,
             model=OpenAIModel(
                 model_name=args.model,
-                api_key=os.getenv("OPENAI_API_KEY")
+                api_key=settings.api.openai_api_key
             ),
             debug=args.debug
         )

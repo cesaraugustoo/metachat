@@ -7,6 +7,7 @@ class PathSettings(BaseModel):
     checkpoint_dir: Optional[str] = Field(default=None, description="Directory for model checkpoints")
     results_dir: str = Field(default="./results", description="Directory for simulation results")
     log_dir: str = Field(default="./logs", description="Directory for logs")
+    materials_db_path: str = Field(default="./tools/material_db/materials.db", description="Path to materials database")
 
 class APISettings(BaseModel):
     openai_api_key: Optional[str] = Field(default=None, description="OpenAI API Key")
