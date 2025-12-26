@@ -5,7 +5,7 @@
 - [x] Task: Configure shared dependencies in the new package b2dec94
 - [ ] Task: Conductor - User Manual Verification 'Package Scaffolding' (Protocol in workflow.md)
 
-## Phase 2: Component Migration
+## Phase 2: Component Migration [checkpoint: 04ba525]
 - [x] Task: Migrate Core Models (`core/models/`) to `metachat_core` 80f92a0
 - [x] Task: Migrate Base Agent and Tool interfaces to `metachat_core` 36d6051
 - [x] Task: Migrate `NeuralDesignAPI` shared logic to `metachat_core` 2a0c78f
