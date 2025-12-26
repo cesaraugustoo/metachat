@@ -8,7 +8,7 @@
 ## Phase 2: Component Migration
 - [x] Task: Migrate Core Models (`core/models/`) to `metachat_core` 80f92a0
 - [x] Task: Migrate Base Agent and Tool interfaces to `metachat_core` 36d6051
-- [ ] Task: Migrate `NeuralDesignAPI` shared logic to `metachat_core`
+- [x] Task: Migrate `NeuralDesignAPI` shared logic to `metachat_core` 2a0c78f
 - [ ] Task: Conductor - User Manual Verification 'Component Migration' (Protocol in workflow.md)
 
 ## Phase 3: Consumer Integration & Cleanup
