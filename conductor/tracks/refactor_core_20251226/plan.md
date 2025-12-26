@@ -12,7 +12,7 @@
 - [ ] Task: Conductor - User Manual Verification 'Component Migration' (Protocol in workflow.md)
 
 ## Phase 3: Consumer Integration & Cleanup
-- [ ] Task: Refactor `metachat-aim` to use `metachat_core`
+- [x] Task: Refactor `metachat-aim` to use `metachat_core` e8be5ce
 - [ ] Task: Refactor `web-app` to use `metachat_core`
 - [ ] Task: Remove duplicated code from legacy directories
 - [ ] Task: Conductor - User Manual Verification 'Integration and Cleanup' (Protocol in workflow.md)
