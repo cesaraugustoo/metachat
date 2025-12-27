@@ -13,7 +13,9 @@ class APISettings(BaseModel):
     openai_api_key: Optional[str] = Field(default=None, description="OpenAI API Key")
     anthropic_api_key: Optional[str] = Field(default=None, description="Anthropic API Key")
     together_api_key: Optional[str] = Field(default=None, description="Together AI API Key")
+    openrouter_api_key: Optional[str] = Field(default=None, description="OpenRouter API Key")
     openai_model_name: str = Field(default="gpt-5.2-2025-12-11", description="Default OpenAI model")
+    openrouter_model_name: str = Field(default="google/gemini-2.0-flash-001", description="Default OpenRouter model")
 
 class SolverSettings(BaseModel):
     batch_size: int = Field(default=64, description="Solver batch size")
