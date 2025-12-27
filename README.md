@@ -14,6 +14,10 @@ Near real-time, multi-objective, multi-wavelength autonomous metasurface design 
 
 ![MetaChat framework overview](figs/fig1.png)
 
+## Documentation
+
+For comprehensive instructions on installation, configuration, and usage, please refer to the **[Centralized User Guide](USER_GUIDE.md)**.
+
 ## Repository structure
 
 - `metachat-aim/`: Source code for the AIM agentic design stack.
