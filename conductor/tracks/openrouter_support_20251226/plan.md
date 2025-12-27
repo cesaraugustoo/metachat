@@ -8,9 +8,9 @@
 ## Phase 2: Core Implementation
 - [x] Task: Implement `OpenRouterModel` in `metachat_core/core/models/openrouter.py` inheriting from `BaseModel`. 8dc087a
 - [x] Task: Export `OpenRouterModel` in `metachat_core/core/models/__init__.py`. 8dc087a
-- [ ] Task: Conductor - User Manual Verification 'Phase 2: Core Implementation' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 2: Core Implementation' (Protocol in workflow.md) [checkpoint: d3eb6f1]
 
 ## Phase 3: Testing and Verification
-- [ ] Task: Write unit tests for `OpenRouterModel` in `metachat_core/tests/test_openrouter.py`.
+- [x] Task: Write unit tests for `OpenRouterModel` in `metachat_core/tests/test_openrouter.py`. 48f80a2
 - [ ] Task: Verify `OpenRouterModel` compatibility with `IterativeAgent` in an integration test.
 - [ ] Task: Conductor - User Manual Verification 'Phase 3: Testing and Verification' (Protocol in workflow.md)
