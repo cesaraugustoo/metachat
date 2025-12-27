@@ -2,7 +2,7 @@
 
 ## Phase 1: Configuration
 - [x] Task: Update `APISettings` in `metachat_core/config/settings.py` to include `openrouter_api_key` and `openrouter_model_name`. c608f10
-- [ ] Task: Update `.env.example` with `OPENROUTER_API_KEY` and `OPENROUTER_MODEL_NAME`.
+- [x] Task: Update `.env.example` with `OPENROUTER_API_KEY` and `OPENROUTER_MODEL_NAME`. 3b4bb6d
 - [ ] Task: Conductor - User Manual Verification 'Phase 1: Configuration' (Protocol in workflow.md)
 
 ## Phase 2: Core Implementation
