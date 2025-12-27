@@ -3,11 +3,11 @@
 ## Phase 1: Configuration
 - [x] Task: Update `APISettings` in `metachat_core/config/settings.py` to include `openrouter_api_key` and `openrouter_model_name`. c608f10
 - [x] Task: Update `.env.example` with `OPENROUTER_API_KEY` and `OPENROUTER_MODEL_NAME`. 3b4bb6d
-- [ ] Task: Conductor - User Manual Verification 'Phase 1: Configuration' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 1: Configuration' (Protocol in workflow.md) [checkpoint: a2f3dad]
 
 ## Phase 2: Core Implementation
-- [ ] Task: Implement `OpenRouterModel` in `metachat_core/core/models/openrouter.py` inheriting from `BaseModel`.
-- [ ] Task: Export `OpenRouterModel` in `metachat_core/core/models/__init__.py`.
+- [x] Task: Implement `OpenRouterModel` in `metachat_core/core/models/openrouter.py` inheriting from `BaseModel`. 8dc087a
+- [x] Task: Export `OpenRouterModel` in `metachat_core/core/models/__init__.py`. 8dc087a
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Core Implementation' (Protocol in workflow.md)
 
 ## Phase 3: Testing and Verification
