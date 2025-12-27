@@ -1,0 +1,253 @@
+[
+  {
+    "role": "user",
+    "content": "What is the meaning of life?",
+    "timestamp": "2025-12-26T23:25:22.898818"
+  },
+  {
+    "role": "assistant",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.899546",
+    "iteration": 1
+  },
+  {
+    "role": "thinking",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.899952",
+    "iteration": 1
+  },
+  {
+    "role": "assistant",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.900387",
+    "iteration": 2
+  },
+  {
+    "role": "thinking",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.900761",
+    "iteration": 2
+  },
+  {
+    "role": "assistant",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.901052",
+    "iteration": 3
+  },
+  {
+    "role": "thinking",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.901373",
+    "iteration": 3
+  },
+  {
+    "role": "assistant",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.901665",
+    "iteration": 4
+  },
+  {
+    "role": "thinking",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.902002",
+    "iteration": 4
+  },
+  {
+    "role": "assistant",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.902251",
+    "iteration": 5
+  },
+  {
+    "role": "thinking",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.902517",
+    "iteration": 5
+  },
+  {
+    "role": "assistant",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.902797",
+    "iteration": 6
+  },
+  {
+    "role": "thinking",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.903052",
+    "iteration": 6
+  },
+  {
+    "role": "assistant",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.903354",
+    "iteration": 7
+  },
+  {
+    "role": "thinking",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.903626",
+    "iteration": 7
+  },
+  {
+    "role": "assistant",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.903912",
+    "iteration": 8
+  },
+  {
+    "role": "thinking",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.904161",
+    "iteration": 8
+  },
+  {
+    "role": "assistant",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.904417",
+    "iteration": 9
+  },
+  {
+    "role": "thinking",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.904722",
+    "iteration": 9
+  },
+  {
+    "role": "assistant",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.904988",
+    "iteration": 10
+  },
+  {
+    "role": "thinking",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.905255",
+    "iteration": 10
+  },
+  {
+    "role": "assistant",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.905560",
+    "iteration": 11
+  },
+  {
+    "role": "thinking",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.905851",
+    "iteration": 11
+  },
+  {
+    "role": "assistant",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.906283",
+    "iteration": 12
+  },
+  {
+    "role": "thinking",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.906604",
+    "iteration": 12
+  },
+  {
+    "role": "assistant",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.906917",
+    "iteration": 13
+  },
+  {
+    "role": "thinking",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.907233",
+    "iteration": 13
+  },
+  {
+    "role": "assistant",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.907522",
+    "iteration": 14
+  },
+  {
+    "role": "thinking",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.907849",
+    "iteration": 14
+  },
+  {
+    "role": "assistant",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.908166",
+    "iteration": 15
+  },
+  {
+    "role": "thinking",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.908471",
+    "iteration": 15
+  },
+  {
+    "role": "assistant",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.908755",
+    "iteration": 16
+  },
+  {
+    "role": "thinking",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.909044",
+    "iteration": 16
+  },
+  {
+    "role": "assistant",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.909389",
+    "iteration": 17
+  },
+  {
+    "role": "thinking",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.909683",
+    "iteration": 17
+  },
+  {
+    "role": "assistant",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.910024",
+    "iteration": 18
+  },
+  {
+    "role": "thinking",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.910392",
+    "iteration": 18
+  },
+  {
+    "role": "assistant",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.910701",
+    "iteration": 19
+  },
+  {
+    "role": "thinking",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.910997",
+    "iteration": 19
+  },
+  {
+    "role": "assistant",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.911353",
+    "iteration": 20
+  },
+  {
+    "role": "thinking",
+    "content": "<MagicMock name='mock.choices.__getitem__().message.content' id='128774395199664'>",
+    "timestamp": "2025-12-26T23:25:22.911705",
+    "iteration": 20
+  },
+  {
+    "role": "error",
+    "content": "Maximum iterations reached",
+    "timestamp": "2025-12-26T23:25:22.911980",
+    "iteration": 21
+  }
+]

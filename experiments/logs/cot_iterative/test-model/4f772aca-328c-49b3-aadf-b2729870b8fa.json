@@ -1,0 +1,19 @@
+[
+  {
+    "role": "user",
+    "content": "What is the meaning of life?",
+    "timestamp": "2025-12-26T23:25:45.382654"
+  },
+  {
+    "role": "assistant",
+    "content": "I have thought about it. <response>The answer is 42</response>",
+    "timestamp": "2025-12-26T23:25:45.382841",
+    "iteration": 1
+  },
+  {
+    "role": "response",
+    "content": "The answer is 42",
+    "timestamp": "2025-12-26T23:25:45.383046",
+    "iteration": 1
+  }
+]
