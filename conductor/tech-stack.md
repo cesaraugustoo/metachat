@@ -6,7 +6,7 @@
 
 ## Backend and API
 - **FastAPI & Uvicorn:** Provides a high-performance asynchronous web server and API for the web application.
-- **LLM Integrations:** Support for OpenAI, Anthropic, and Llama APIs to power the agentic iterative monologue.
+- **LLM Integrations:** Support for OpenAI, Anthropic, Llama, and OpenRouter APIs to power the agentic iterative monologue.
 
 ## Scientific Computing and Simulation
 - **PyTorch:** Used for building and executing the FiLM WaveY-Net surrogate solvers.
