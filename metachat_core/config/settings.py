@@ -16,6 +16,8 @@ class APISettings(BaseModel):
     openrouter_api_key: Optional[str] = Field(default=None, description="OpenRouter API Key")
     openai_model_name: str = Field(default="gpt-5.2-2025-12-11", description="Default OpenAI model")
     openrouter_model_name: str = Field(default="google/gemini-2.0-flash-001", description="Default OpenRouter model")
+    vllm_base_url: str = Field(default="http://localhost:8000/v1", description="Base URL for vLLM server")
+    vllm_model_name: str = Field(default="meta-llama/Llama-2-7b-chat-hf", description="Model name to use with vLLM")
 
 class SolverSettings(BaseModel):
     batch_size: int = Field(default=64, description="Solver batch size")
